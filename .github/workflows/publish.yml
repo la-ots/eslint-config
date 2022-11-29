@@ -5,10 +5,10 @@ on:
     types: [published]
 
 env:
-  PACKAGE_URL: 'la-ots/eslint-config'
+  PACKAGE_URL: "la-ots/eslint-config"
   PACKAGE_NAME: eslint-config
   NPM_URL: "https://www.npmjs.com/package/@la-ots/eslint-config"
-  GITHUB_URL: 
+  GITHUB_URL: "https://github.com/la-ots/eslint-config/packages"
   NODE_VERSION: 16
 
 jobs:
@@ -59,13 +59,13 @@ jobs:
         if: "!github.event.release.prerelease"
         run: npm publish $(ls *.tgz) --access public
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.LAOTS_NPM_TOKEN }}
           
       - name: Publish to NPM (prerelease)
         if: "github.event.release.prerelease"
         run: npm publish $(ls *.tgz) --access public --tag beta
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.LAOTS_NPM_TOKEN }}
           
   publish-gpr:
     name: Release to GitHub Packages
