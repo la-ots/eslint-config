@@ -1,6 +1,6 @@
 {
   "name": "@la-ots/eslint-config",
-  "version": "1.0.0.beta.1",
+  "version": "1.0.0-beta.1",
   "description": "Standard ESlint configuration for Louisiana's Office of Technology Services",
   "author": "Louisiana Office of Technology Services",
   "license": "CC0-1.0",
