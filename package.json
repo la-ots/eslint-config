@@ -1,0 +1,29 @@
+{
+  "name": "@la-ots/eslint-config",
+  "version": "1.0.0-beta.1",
+  "description": "Standard ESlint configuration for Louisiana's Office of Technology Services",
+  "author": "Louisiana Office of Technology Services",
+  "license": "CC0-1.0",
+  "repository": "github:la-ots/eslint-config",
+  "bugs": "https://github.com/la-ots/eslint-config/issues",
+  "homepage": "https://github.com/la-ots/eslint-config",
+  "keywords": [
+    "eslintconfig",
+    "eslint-config",
+    "eslint",
+    "la-ots",
+    "laots"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "peerDependencies": {
+    "eslint": ">= 7"
+  },
+  "dependencies": {
+    "confusing-browser-globals": "^1.0.11",
+    "eslint": "^8.20.0",
+    "eslint-config-prettier": "^8.5.0"
+  }
+}
