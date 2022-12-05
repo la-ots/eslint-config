@@ -1,6 +1,6 @@
 {
   "name": "@la-ots/eslint-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Standard ESlint configuration for Louisiana's Office of Technology Services",
   "author": "Louisiana Office of Technology Services",
   "license": "CC0-1.0",
@@ -26,10 +26,10 @@
   },
   "dependencies": {
     "confusing-browser-globals": "^1.0.11",
-    "eslint": "^8.28.0",
+    "eslint": "^8.29.0",
     "eslint-config-prettier": "^8.5.0"
   },
   "devDependencies": {
-    "@la-ots/prettier-config": "^1.0.0-beta.1"
+    "@la-ots/prettier-config": "^1.0.0"
   }
 }
