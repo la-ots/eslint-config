@@ -16,7 +16,7 @@ Create `.eslintrc.js` file with the following content:
 module.exports = {
   extends: "@la-ots/eslint-config",
   rules: {
-    // your custom rules here
+    // add any overrides if required
   },
 };
 ```
@@ -29,7 +29,7 @@ If you're using this plugin with [Prettier](https://prettier.io), add "prettier"
 module.exports = {
   extends: ["@la-ots/eslint-config", "prettier"],
   rules: {
-    // your custom rules
+    // add any overrides if required
   },
 };
 ```
@@ -41,7 +41,8 @@ Add the following scripts to your `package.json`:
 ```javascript
 {
   "scripts": {
-    "lint-js": "eslint *.js"
+    "lint:js": "eslint **/*.js",
+    "lint:js:fix": "eslint **/*.js --fix"
   }
 }
 ```
@@ -49,5 +50,5 @@ Add the following scripts to your `package.json`:
 Execute scripts:
 
 ```bash
-npm run lint-js
+npm run lint:js
 ```

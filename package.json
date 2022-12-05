@@ -1,6 +1,6 @@
 {
   "name": "@la-ots/eslint-config",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0",
   "description": "Standard ESlint configuration for Louisiana's Office of Technology Services",
   "author": "Louisiana Office of Technology Services",
   "license": "CC0-1.0",
@@ -16,9 +16,10 @@
   ],
   "main": "index.js",
   "scripts": {
-    "lint": "eslint .",
-    "prettier-check": "prettier --check .",
-    "prettier-fix": "prettier --write ."
+    "lint:js": "eslint **/*.js",
+    "lint:js:fix": "eslint **/*.js --fix",
+    "format:check": "prettier --check .",
+    "format": "prettier --write --ignore-unknown ."
   },
   "peerDependencies": {
     "eslint": ">= 7"
