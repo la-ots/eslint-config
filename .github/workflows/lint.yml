@@ -1,4 +1,4 @@
-name: Publish release to NPM and Github Packages
+name: Lint
 
 on:
   pull_request:
@@ -25,6 +25,6 @@ jobs:
         run: |
           npm ci
 
-      - name: Lint JS
+      - name: Run linters
         run: |
           npm run lint:js & npm run format:check
